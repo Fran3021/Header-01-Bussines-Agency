@@ -1,0 +1,108 @@
+.main-principal{
+    .container{
+        display: flex;
+        flex-direction: column;
+        h1{
+            font-size: 120px;
+            line-height: 120px;
+            font-family: $font-second;
+            color: $black;
+            font-weight: normal;
+            width: 50%;
+            margin-bottom: 8px;
+            span{
+                font-size: 120px;
+                line-height: 120px;
+                font-family: $font-second;
+                color: $green;
+                font-weight: normal;
+            }
+        }
+        p{
+            font-size: 24px;
+            line-height: 40px;
+            color: $silver;
+            width: 40%;
+            margin-bottom: 40px
+        }
+        .button{
+            @include button;
+            margin-bottom: 56px;
+        }
+        .numbers{
+            display: flex;
+            width: 30%;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 60px;
+            .years{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                h3{
+                    font-size: 48px;
+                    font-family: $font-second;
+                }
+                p{
+                    font-size: 18px;
+                    color: $silver;
+                    width: 100%;
+                }
+            }
+            .cases{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                h3{
+                    font-size: 48px;
+                    font-family: $font-second;
+                }
+                p{
+                    font-size: 18px;
+                    color: $silver;
+                    width: 100%;
+                }
+            }
+            .opinions{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                h3{
+                    font-size: 48px;
+                    font-family: $font-second;
+                }
+                p{
+                    font-size: 18px;
+                    color: $silver;
+                    width: 100%;
+                }
+            }
+        }
+        .articles{
+            display: flex;
+            gap: 32px;
+            article{
+                background-color: $white;
+                padding: 32px;
+                img{
+                    margin-bottom: 8px;
+                }
+                h3{
+                    font-size: 24px;
+                    color: $black;
+                    font-weight: 500;
+                    margin-bottom: 8px;
+                }
+                p{
+                    width: 80%;
+                    font-size: 18px;
+                    color: $silver;
+                    margin-bottom: 0px;
+                }
+            }
+        }
+    }
+}
