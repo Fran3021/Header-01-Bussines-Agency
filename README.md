@@ -1,6 +1,6 @@
 # Header 01
 
-###### Adapted from mobile devices to desktop in 1920px.
+###### Adapted for 1536px and 1920px.
 
 ## Technologies used:
 - HTML
