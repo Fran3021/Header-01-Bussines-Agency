@@ -1,16 +1,16 @@
 //variables de breakpoints
 $bp-tablet: 768px;
 $bp-tablet-horizontal: 1024px;
-$bp-desktop: 1200px;
-$bp-desktop-xl: 1440px;
+$bp-desktop: 1280px;
+$bp-desktop-xl: 1536px;
 $bp-desktop-xxl: 1920px;
 
-//variables de las fuentes
-$font-primary: Poppins;
-$font-second: Bebas Neue;
+//variables de fuentes
+$poppins: 'Poppins';
+$bebas: 'Bebas Neue';
 
 //variables de color
+$cyan-green: #7EDAD2;
 $black: #424241;
-$green: #7EDAD2;
-$silver: #909090;
 $white: #FAFAFA;
+$silver: #909090;

@@ -1,48 +1,10 @@
-@import './abstracts/abstracts';
-@import './vendors/vendors';
-@import './base/base';
-@import './components/components';
-@import './layout/layout';
-@import './pages/pages';
-@import './themes/themes';
-@import 'settings';
-
-body{
-    overflow: scroll;
-}
-
-*{
-    box-sizing: border-box;
-}
-
-body *{
-    font-family: Poppins;
-}
-
-//Fuente de la pagina
-@font-face {
-    font-family: 'Poppins';
-    src: url('../fonts/');
-    src: url('../fonts/?#iefix') format('embedded-opentype'),
-        url('../fonts/Poppins-Regular.woff2') format('woff2'),
-        url('../fonts/Poppins-Regular.woff') format('woff'),
-        url('../fonts/Poppins-Regular.ttf') format('truetype'),
-        url('../fonts/Poppins-Regular.svg#Poppins-Regular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-}
-
-//fuente del h1
-@font-face {
-    font-family: 'Bebas Neue';
-    src: url('../fonts/title/');
-    src: url('../fonts/title/?#iefix') format('embedded-opentype'),
-        url('../fonts/title/BebasNeue-Regular.woff2') format('woff2'),
-        url('../fonts/title/BebasNeue-Regular.woff') format('woff'),
-        url('../fonts/title/BebasNeue-Regular.ttf') format('truetype'),
-        url('../fonts/title/BebasNeue-Regular.svg#BebasNeue-Regular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-}
+@use './layout/_container';
+@use './layout/_footer';
+@use './layout/_forms';
+@use './layout/_grid';
+@use './layout/_header';
+@use './layout/_main';
+@use './layout/_navbar';
+@use './layout/_sidebar';
+@use './themes/_themes';
+@use './_settings';

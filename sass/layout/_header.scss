@@ -1,32 +1,38 @@
+@use '../abstracts/abstracts' as abs;
+@use '../base/base' as base;
+@use '../components/components' as comp;
+
 .header-principal{
-    padding-top: 33px;
-    position: relative;
+    padding-top: 27px;
     margin-bottom: 80px;
-    .image-hero-desktop{
-        position: absolute;
-        right: 0;
-        top: 0;
-        z-index: -1;
+    @include abs.breakpoint(desktopxxl){
+        padding-top: 33px;
+        margin-bottom: 113px;
     }
-    .container{
+    .container-header-principal{
         display: flex;
         justify-content: space-between;
         align-items: center;
-        .logo-header{
+        .logo-web{
             text-decoration: none;
-            font-size: 36px;
+            font-size: 33px;
+            color: abs.$black;
             font-weight: 600;
-            color: $black;
+            @include abs.breakpoint(desktopxxl){
+                font-size: 36px;
+            }
         }
-        .header-menu{
+        .menu-header{
             ul{
                 display: flex;
-                gap: 56px;
+                gap: 50px;
                 a{
                     text-decoration: none;
-                    font-size: 18px;
-                    font-weight: normal;
-                    color: $black;
+                    color: abs.$black;
+                    font-size: 15px;
+                    @include abs.breakpoint(desktopxxl){
+                        font-size: 18px;
+                    }
                 }
             }
         }

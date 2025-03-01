@@ -1,106 +1,161 @@
+@use '../abstracts/abstracts' as abs;
+@use '../base/base' as base;
+@use '../components/components' as comp;
+
 .main-principal{
-    .container{
+    .container-main-principal{
         display: flex;
         flex-direction: column;
-        h1{
-            font-size: 120px;
-            line-height: 120px;
-            font-family: $font-second;
-            color: $black;
-            font-weight: normal;
-            width: 50%;
-            margin-bottom: 8px;
-            span{
-                font-size: 120px;
-                line-height: 120px;
-                font-family: $font-second;
-                color: $green;
+        .top-hero{
+            .title-hero{
+                font-size: 100px;
+                font-family: abs.$bebas;
+                width: 46%;
+                line-height: 100px;
                 font-weight: normal;
-            }
-        }
-        p{
-            font-size: 24px;
-            line-height: 40px;
-            color: $silver;
-            width: 40%;
-            margin-bottom: 40px
-        }
-        .button{
-            @include button;
-            margin-bottom: 56px;
-        }
-        .numbers{
-            display: flex;
-            width: 30%;
-            justify-content: space-between;
-            align-items: center;
-            margin-bottom: 60px;
-            .years{
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-                h3{
-                    font-size: 48px;
-                    font-family: $font-second;
+                margin-bottom: 8px;
+                color: abs.$black;
+                @include abs.breakpoint(desktopxxl){
+                    font-size: 120px;
+                    line-height: 120px;
                 }
-                p{
-                    font-size: 18px;
-                    color: $silver;
-                    width: 100%;
+                span{
+                    font-size: 100px;
+                    font-family: abs.$bebas;
+                    color: abs.$cyan-green;
+                    font-weight: normal;
+                    @include abs.breakpoint(desktopxxl){
+                        font-size: 120px;
+                        line-height: 120px;
+                    }
                 }
             }
-            .cases{
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-                h3{
-                    font-size: 48px;
-                    font-family: $font-second;
-                }
-                p{
-                    font-size: 18px;
-                    color: $silver;
-                    width: 100%;
-                }
-            }
-            .opinions{
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-                h3{
-                    font-size: 48px;
-                    font-family: $font-second;
-                }
-                p{
-                    font-size: 18px;
-                    color: $silver;
-                    width: 100%;
-                }
-            }
-        }
-        .articles{
-            display: flex;
-            gap: 32px;
-            article{
-                background-color: $white;
-                padding: 32px;
-                img{
-                    margin-bottom: 8px;
-                }
-                h3{
+            .parrafo-hero{
+                font-size: 20px;
+                width: 40%;
+                color: abs.$silver;
+                margin-bottom: 40px;
+                @include abs.breakpoint(desktopxxl){
                     font-size: 24px;
-                    color: $black;
-                    font-weight: 500;
-                    margin-bottom: 8px;
+                    line-height: 40px;
+                }
+            }
+            .button{
+                @include comp.button;
+                margin-bottom: 46px;
+                @include abs.breakpoint(desktopxxl){
+                    margin-bottom: 56px;
+                }
+            }
+            .stats{
+                width: 30%;
+                display: flex;
+                justify-content: space-between;
+                margin-bottom: 55px;
+                @include abs.breakpoint(desktopxxl){
+                    margin-bottom: 64px;
+                }
+                .years{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    span{
+                        font-size: 40px;
+                        font-family: abs.$bebas;
+                        color: abs.$black;
+                        @include abs.breakpoint(desktopxxl){
+                            font-size: 48px;
+                        }
+                    }
+                    p{
+                        font-size: 15px;
+                        color: abs.$silver;
+                        @include abs.breakpoint(desktopxxl){
+                            font-size: 18px;
+                        }
+                    }
+                }
+                .cases{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    span{
+                        font-size: 40px;
+                        font-family: abs.$bebas;
+                        color: abs.$black;
+                        @include abs.breakpoint(desktopxxl){
+                            font-size: 48px;
+                        }
+                    }
+                    p{
+                        font-size: 15px;
+                        color: abs.$silver;
+                        @include abs.breakpoint(desktopxxl){
+                            font-size: 18px;
+                        }
+                    }
+                }
+                .clients{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    span{
+                        font-size: 40px;
+                        font-family: abs.$bebas;
+                        color: abs.$black;
+                        @include abs.breakpoint(desktopxxl){
+                            font-size: 48px;
+                        }
+                    }
+                    p{
+                        font-size: 15px;
+                        color: abs.$silver;
+                        @include abs.breakpoint(desktopxxl){
+                            font-size: 18px;
+                        }
+                    }
+                }
+            }
+        }
+        .bottom-hero{
+            display: flex;
+            gap: 15px;
+            padding-right: 30px;
+            @include abs.breakpoint(desktopxxl){
+                gap: 32px;
+            }
+            article{
+                width: 25%;
+                padding: 30px 40px 30px 30px;
+                background-color: abs.$white;
+                @include abs.breakpoint(desktopxxl){
+                    padding: 32px 44px 32px 32px;
+                }
+                img{
+                    margin-bottom: 5px;
+                    @include abs.breakpoint(desktopxxl){
+                        margin-bottom: 8px;
+                    }
+                }
+                h3{
+                    font-size: 20px;
+                    font-weight: 500px;
+                    color: abs.$black;
+                    margin-bottom: 5px;
+                    @include abs.breakpoint(desktopxxl){
+                        font-size: 24px;
+                        margin-bottom: 8px;
+                    }
                 }
                 p{
-                    width: 80%;
-                    font-size: 18px;
-                    color: $silver;
-                    margin-bottom: 0px;
+                    font-size: 15px;
+                    color: abs.$silver;
+                    @include abs.breakpoint(desktopxxl){
+                        font-size: 18px;
+                    }
                 }
             }
         }

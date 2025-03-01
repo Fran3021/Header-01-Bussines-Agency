@@ -1,0 +1,15 @@
+@use '../abstracts/abstracts' as abs;
+
+//botones
+@mixin button{
+    text-decoration: none;
+    color: abs.$white;
+    background-color: abs.$cyan-green;
+    font-size: 15px;
+    padding: 13px 30px;
+    display: inline-block;
+    @include abs.breakpoint(desktopxxl){
+        font-size: 18px;
+        padding: 17px 34px;
+    }
+}
